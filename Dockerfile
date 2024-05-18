@@ -12,8 +12,8 @@ WORKDIR /var/www/html
 # Copy the content of your site to the working directory
 COPY . .
 
-# Expose port 80 to the outside world
-EXPOSE 80
+# Expose port 8080 to the outside world
+EXPOSE 8080
 
 # Start Nginx when the container launches
 CMD ["nginx", "-g", "daemon off;"]
